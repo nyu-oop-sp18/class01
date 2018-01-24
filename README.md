@@ -58,7 +58,7 @@ what we will use in class. And I will be demonstrating development
 techniques with this IDE that will make your life easier. 
 
 * Sign up for [free student licenses](https://www.jetbrains.com/shop/eform/students) (Reminder: use your NYU email)
-* In the meantime, download the [Ultimate Edition Free 30-day trial]](https://www.jetbrains.com/idea/download/) of Intellij.
+* In the meantime, download the [Ultimate Edition Free 30-day trial](https://www.jetbrains.com/idea/download/) of Intellij.
 * [Ubuntu] Untar the downloaded archive by clicking it and then using the "Extract" menu item. Extract to location of your choice. Open that location and follow the instructions inside the "Install-Linux-tar.txt" file.
 * [OSX] Open the disk image and use the installer.
 * When prompted, select "Evaluate for 30 days". Install the license when you get them in an email from Jetbrains.
@@ -251,7 +251,7 @@ scala> def area(r: Double) = {
          def square(x: Double) = x * x
          pi * square(r)
        }
-area:(Double)Double
+area:(r: Double)Double
 ```
 
 Recursive functions can be written as expected. For example, the
