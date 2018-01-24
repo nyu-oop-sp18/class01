@@ -71,6 +71,55 @@ techniques with this IDE that will make your life easier.
 There are many many free plugins available for Intellij. You should feel free to install anything that sounds useful to you. You can explore what is available from the "Preferences" menu in Intellij.
 
 
+### Importing a Scala Sbt Project into Intellij
+
+To import the Scala sbt project for Class 1 into Intellij, do the following:
+
+* Open Intellij and click the "Import Project" menu item
+  (Alternatively, press Ctrl+Shift+a [Ubuntu] or Command+Shift+a [OSX]
+  and type 'import project'. Then select the command 'Import Project'
+  from the drop down menu).
+  
+* Navigate to your cloned repository and select the "class01"
+  directory and click "Import".
+  
+* Click the radio button "Import project from external model".
+
+* Highlight sbt. Click Next.
+
+* Check "Use sbt shell for build and import", and under "Download:
+  check "Library sources" and "sbt sources". Do not hit "Finish" yet.
+  
+* The dropdown for the Project SDK will mostly likely be empty. We
+  need to configure a JVM.
+  
+  * Click "New" and then "JDK". 
+  * Most likely IntelliJ will guess correctly where your JDK is. If not..
+  * [Ubuntu] it is ```/usr/lib/jvm/java-8-openjdk-amd64```
+  * [OSX] Where your JVM is depends on what version of OSX you are
+    using. On newer versions of OSX you can use this command to find
+    the location of the JDK ```/usr/libexec/java_home -v 1.8```).
+  * Select the JDK folder.
+    
+* Under "JVM Options" below "Global sbt settings", remove the text in
+  the field labeled "VM parameters". Click "Finish".
+
+* It may take IntelliJ a few minutes to initialize the project. Future
+  project imports will be faster.
+
+* If you are prompted with a message like "Unregistered VCS root
+  detected", simply click "Add root".
+
+* Open the worksheet `src/main/scala/Demo.sc` and type in some Scala
+  expressions (see below). Alternatively, start the Scala REPL by
+  typing `console` in the sbt shell. If the sbt shell is not already
+  open, you can open it by pressing Crtl+Shift+s [Ubuntu] or
+  Command+Shift+s [OSX].
+
+* Post on Piazza if you need help, most likely others have had the
+  same problem and figured it out.
+
+
 ## Scala Crash Course
 
 In the following, we assume that you have started the Scala
