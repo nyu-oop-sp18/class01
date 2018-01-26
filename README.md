@@ -117,7 +117,7 @@ To import the Scala sbt project for Class 1 into Intellij, do the following:
   Command+Shift+s [OSX].
 
 * Post on Piazza if you need help, most likely others have had the
-  same problem and figured it out.
+  same problem and may have figured it out.
 
 
 ## Scala Crash Course
@@ -598,19 +598,19 @@ interesting effect on our rewriting-based evaluation strategy:
 
 ```scala
 sumTail(1, 4) 
-   -> loop(0, 1, 4)
-   -> if (1 < 4) loop(1 + 0, 1 + 1, 4) else 0
-   -> if (true) loop(1 + 0, 1 + 1, 4) else 0
-   -> loop(1, 2, 4)
-   -> if (2 < 4) loop(2 + 1, 2 + 1, 4) else 1
-   -> if (true) loop(2 + 1, 2 + 1, 4) else 1
-   -> loop(3, 3, 4)
-   -> if (3 < 4) loop(3 + 3, 3 + 1, 4) else 3
-   -> if (true) loop(3 + 3, 3 + 1, 4) else 3
-   -> loop(6, 3, 4)
-   -> if (4 < 4) loop(4 + 6, 4 + 1, 4) else 6
-   -> if (false) loop(4 + 6, 4 + 1, 4) else 6
-   -> 6
+-> loop(0, 1, 4)
+-> if (1 < 4) loop(1 + 0, 1 + 1, 4) else 0
+-> if (true) loop(1 + 0, 1 + 1, 4) else 0
+-> loop(1, 2, 4)
+-> if (2 < 4) loop(2 + 1, 2 + 1, 4) else 1
+-> if (true) loop(2 + 1, 2 + 1, 4) else 1
+-> loop(3, 3, 4)
+-> if (3 < 4) loop(3 + 3, 3 + 1, 4) else 3
+-> if (true) loop(3 + 3, 3 + 1, 4) else 3
+-> loop(6, 3, 4)
+-> if (4 < 4) loop(4 + 6, 4 + 1, 4) else 6
+-> if (false) loop(4 + 6, 4 + 1, 4) else 6
+-> 6
 ```
 
 Observe that the size of the expressions that we obtain throughout the
